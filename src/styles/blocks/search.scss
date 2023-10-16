@@ -1,7 +1,7 @@
 .search {
    padding: rem(93) 0 rem(114);
    color: $white;
-   background: url('../../images/content/main.png') center top / cover no-repeat;
+   background: url('./images/content/main.png') center top / cover no-repeat;
    
    @include tablets {
       padding: rem(48) 0 rem(45.7);
