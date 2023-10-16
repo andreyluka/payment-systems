@@ -1,0 +1,23 @@
+.nav {   
+   @include tablets {
+      display: none;
+   }
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 600px;
+      column-gap: rem(29);
+      row-gap: rem(15);
+   }
+
+   &__link {
+      font-size: rem(20);
+   }
+   
+   &__span {
+      font-size: rem(19);
+      line-height: 1.33;
+   }
+}

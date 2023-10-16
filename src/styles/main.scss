@@ -1,0 +1,33 @@
+// variables
+
+$white: #FFF;
+$black: #000;
+$gray: #00000073;
+$gray-modal: #000000CC;
+$gray-dark: #00000029;
+$gray-light: #BFBFBF;
+$red: #D30531;
+$red-light: #E1133F;
+$blue-light: #00468533;
+$blue-dark: #004685;
+$aqua: #569DDC;
+
+
+
+// breakpoints
+
+$tablets: 799px;
+$phones: 480px;
+
+
+// media
+
+@import "./layout/media.scss";
+
+// layout
+
+@import "./layout/mixins.scss";
+@import "./layout/layout.scss";
+@import "./layout/fonts.scss";
+
+@import "./blocks/*.scss";

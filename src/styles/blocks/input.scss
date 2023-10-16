@@ -1,0 +1,21 @@
+.input {
+   padding: rem(18.5) rem(23);
+   border: 2px solid $blue-light;
+   border-radius: rem(8);
+   font-weight: 600;
+   line-height: 1.2;
+   outline: none;
+   caret-color: $gray;
+
+   &:focus {
+      &::placeholder {
+         color: rgba($black, 0.23);
+      }
+   }
+
+   &::placeholder {
+      color: $gray;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+   }
+}

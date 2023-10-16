@@ -1,0 +1,13 @@
+.button {
+   padding: 0.58em 1.36em;
+   background: $red;
+   border-radius: rem(8);
+   color: $white;
+   font-size: rem(24);
+   font-weight: 600;
+   transition: 0.3s;
+
+   &:hover {
+      background: $red-light;
+   }
+}

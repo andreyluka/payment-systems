@@ -1,0 +1,32 @@
+.footer {
+   padding: rem(40) 0;
+   background: $blue-light;
+   font-weight: 600;
+   line-height: 1.42;
+
+   @include tablets {
+      font-size: rem(13.71);
+      padding: rem(22.86) 0 rem(20.29);
+
+      .footer__rights {
+         display: flex;
+      }
+
+      .footer__year {
+         margin-right: 0.3em;
+      }
+   }
+   
+   &__comodo-link {
+      display: block;
+      width: rem(82);
+      height: rem(52);
+      margin-top: rem(-9);
+      
+      @include tablets {
+         width: rem(90.3);
+         height: rem(59.5);
+         margin-top: rem(19.43);
+      }
+   }
+}

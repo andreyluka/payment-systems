@@ -1,0 +1,7 @@
+.main-content {
+   padding-top: rem(68);
+
+   @include tablets {
+      padding-top: rem(55.42);
+   }
+}

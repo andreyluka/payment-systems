@@ -1,0 +1,23 @@
+.title {
+   font-size: rem(36);
+   font-weight: 600;
+
+   @include tablets {
+      font-size: rem(22.86);
+   }
+
+   &--desctop {
+      @include tablets {
+         display: none;
+      }
+   }
+
+   &--phones {
+      display: none;
+
+      @include tablets {
+         display: block;
+         font-size: rem(22.86);
+      }
+   }
+}

@@ -1,0 +1,11 @@
+.title-block {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: rem(21);
+   padding: rem(64) 0 rem(20);
+   
+   @include tablets {
+      padding: rem(34.3) 0 rem(21.7);
+   }
+}

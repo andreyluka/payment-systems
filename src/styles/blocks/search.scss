@@ -1,0 +1,81 @@
+.search {
+   padding: rem(93) 0 rem(114);
+   color: $white;
+   background: url('../../images/content/main.png') center top / cover no-repeat;
+   
+   @include tablets {
+      padding: rem(48) 0 rem(45.7);
+   }
+
+   &__title {
+      font-size: rem(36);
+      font-weight: 600;
+      margin-bottom: rem(20);
+      
+      @include tablets {
+         margin-bottom: rem(24);
+         text-align: center;
+         font-size: rem(22.86);
+      }
+   }
+
+   &__input-block {
+      margin-bottom: rem(14);
+      display: flex;
+      position: relative;
+      
+      @include tablets {
+         margin-bottom: rem(9.15);
+      }
+   }
+
+   &__input {
+      margin-right: rem(17);
+      flex: 1;
+
+      @include tablets {
+         margin-right: 0;
+         padding: rem(14.7) rem(11);
+         font-size: 16px;
+      }
+   }
+
+   &__button {
+      @include tablets {
+         display: none;
+      }
+   }
+
+   &__iconed-button {
+      width: rem(54.85);
+      height: 100%;
+      padding: rem(13.1) rem(13.1) rem(14.86);
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+      
+      &:hover {
+         .search__icon {
+            fill: $aqua;
+         }
+      }
+      
+      @include tablets {
+         display: block;
+      }
+   }
+
+   &__icon {
+      fill: $blue-dark;
+      transition: 0.3s;
+   }
+
+   &__note {
+      @include tablets {
+         font-size: rem(13.71);
+         line-height: 1.333;
+      }
+   }
+}

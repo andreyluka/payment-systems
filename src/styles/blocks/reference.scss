@@ -1,0 +1,16 @@
+.reference {
+   border-bottom: 1px dotted $blue-dark;
+   color: $blue-dark;
+   transition: 0.3s;
+   
+   &:hover {
+      color: $aqua;
+      border-bottom-color: $aqua;
+   }
+
+   &__link {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.3s;
+   }
+}

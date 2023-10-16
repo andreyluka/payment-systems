@@ -1,0 +1,17 @@
+.header {
+   padding: rem(10) 0;
+   background-color: $white;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 30;
+
+   @include tablets {
+      padding: rem(8) 0;
+   }
+
+   &__logo {
+      margin-right: 3%;
+   }
+}

@@ -1,0 +1,95 @@
+.modal-login {
+   justify-content: center;
+   align-items: center;
+   background: $gray-modal;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 50;
+   display: none;
+
+   &__block {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background: $white;
+      position: relative;
+
+      @include phones {
+         max-width: none;
+         height: 100%;
+         padding: 24px 20px;
+      }
+   }
+
+   &__title {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      white-space: pre-line;
+   }
+
+   &__fields {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      margin-bottom: 23px;
+   }
+
+   &__btns {
+      width: 100%;
+      margin-bottom: 36px;
+   }
+
+   &__button {
+      width: 100%;
+      padding: 0.67em 1.36em;
+   }
+
+   &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 18px;
+   }
+
+   &__btn-close {
+      padding: 22.5px 9px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+
+      &:hover {
+         .modal-login__cross {
+            &, &::after {
+               background: $aqua;
+            }
+         }
+      }
+   }
+
+   &__cross {
+      transform: rotate(45deg);
+
+      &, &::after {
+         width: 30px;
+         height: 3px;
+         background: $gray-light;
+         transition: 0.3s;
+      }
+      
+      &::after {
+         content: '';
+         display: block;
+         transform: rotate(90deg);
+      }
+   }
+
+   &--active {
+      display: flex;
+   }
+}
